@@ -1,0 +1,130 @@
+/*#currencyCreateModel .error {*/
+/*    text-align: right;*/
+/*}*/
+
+/*#currencyEditForm .error {*/
+/*    text-align: right;*/
+/*}*/
+
+.loginBackground{
+    background: url('../img/u1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.loginBorder{
+    border: 5px solid #2a2848;
+}
+
+/*custom sidebar header*/
+.main-sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, .1) !important;
+    color: #fff !important;
+}
+
+.navColor{
+    background: #2a2848 !important;
+    background: -webkit-linear-gradient(to right,#205d84,#2a2848) !important;
+    background: linear-gradient(to right,#205d84,#2a2848) !important;
+}
+
+.sidebarColor, .defaultBtnColor{
+    background: #2a2848 !important;
+    background: -webkit-linear-gradient(to right,#2a2848,#205d84) !important;
+    background: linear-gradient(to right,#2a2848,#205d84) !important;
+}
+
+.shadow {
+    box-shadow: 0 0 50px -16px hsla(0, 0%, 39.2%, .5) !important;
+}
+.shadow:hover {
+    box-shadow: 0 0 36px 0 hsla(0, 0%, 39.2%, .5) !important;
+}
+/*custom sidebar header end */
+
+.error-right-msg {
+    text-align: right;
+}
+.mHeight-300 {
+    min-height: 300px;
+}
+
+.mHeight-350 {
+    min-height: 350px;
+}
+
+.profile-avatar-replace {
+    position: absolute;
+    left: 0;
+    top: 32px;
+    cursor: pointer;
+}
+
+.profile-avatar-replace-style {
+    height: 50px;
+    width: 50px;
+}
+
+.profile-avatar-style {
+    height: 100px;
+    width: 100px;
+}
+.t4t-forum {
+    height: 635px !important;
+    overflow-y: scroll;
+}
+
+.t4t-social-chat {
+    height: 620px !important;
+}
+
+.hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+/*login*/
+.login-logo, .register-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card-info.card-outline {
+    border-top: 8px solid #21557b;
+    border-radius: 10px 10px 3px 3px;
+}
+.close{
+    opacity: 1;
+}
+
+/*Validation Custom CSS*/
+.error {
+    color: red;
+    font-size: 14px;
+    font-weight: 400 !important;
+    float: right;
+}
+.form-control.error {
+    border: 1px solid red;
+}
+::-webkit-input-placeholder {
+    font-size: 16px !important;
+}
+
+:-ms-input-placeholder {
+    font-size: 16px !important;
+}
+
+::placeholder {
+    font-size: 16px !important;
+}
+.border{
+    border: 5px solid #21557b !important;
+    border-radius: 10px;
+}
+.t4tOptionError label {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    bottom: -25px;
+}

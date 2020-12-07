@@ -42,21 +42,40 @@
                     </div>
 
                     <div class="card-body">
-                        <table id="newsTable" class="table text-center">
+                        <table id="categoryTable" class="table text-center">
                             <thead>
                             <tr>
-                                <th style="width: 5%">#</th>
-                                <th style="width: 15%">Title</th>
-                                <th style="width: 20%">Body</th>
-                                <th style="width: 10%">Category</th>
-                                <th style="width: 15%">Tag</th>
-                                <th style="width: 10%">Image</th>
-                                <th style="width: 5%">Status</th>
+                                <th style="width: 10%">#</th>
+                                <th style="width: 70%">Category Name</th>
                                 <th style="width: 20%">Action</th>
                             </tr>
                             </thead>
                             <tbody>
-                            {{-- data --}}
+                                @php($i = 1)
+                                @foreach($categories as $category)
+                                    <tr>
+                                    <th>{{$i++}}</th>
+                                    <td>{{$category->name}}</td>
+                                    <td>
+                                        <button
+                                                title="View" type="button"
+                                                onclick="viewNewsModal()"
+                                                class="btn btn-info btn-sm" title="View"><i class="fa fa-search-plus"></i>
+                                        </button>
+                                        <button
+                                                title="Edit" type="button"
+                                                onclick="openNewsEditModal()"
+                                                class="btn btn-primary btn-sm"><i class="fa fa-edit"></i>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            title="Delete"
+                                            onclick="deleteBtn()"
+                                            class="btn btn-sm btn-danger"><i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -64,4 +83,18 @@
             </div>
         </div>
     </div>
+@endsection
+@section('script')
+    <script>
+        // select2
+        $('.select2').select2()
+
+
+        $("#categoryTable").DataTable({
+            "responsive": true,
+            "autoWidth": false,
+            "searching": true,
+
+        });
+    </script>
 @endsection
